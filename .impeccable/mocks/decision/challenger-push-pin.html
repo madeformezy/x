@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Madeform — Push Pin Studio Poster</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1440px; height: 900px; overflow: hidden; background: #f5efe1; color: #221626; font-family: Georgia, serif; }
+  .frame { margin: 16px; width: 1408px; height: 868px; border: 3px solid #d9647a; position: relative; display: grid; grid-template-rows: 78px 1fr 196px; overflow: hidden; background: #f5efe1; }
+  .frame::after { content: ""; position: absolute; inset: 6px; border: 1.5px solid #9674b4; pointer-events: none; }
+  .top { display: flex; align-items: center; justify-content: space-between; padding: 0 38px; border-bottom: 1.5px solid #d9647a88; position: relative; z-index: 2; }
+  .brand { font-size: 32px; font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; color: #2b1730; }
+  .nav { display: flex; gap: 36px; font-family: "Helvetica Neue", sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .nav-cta { display: flex; gap: 12px; }
+  .pill { padding: 10px 22px; border: 2px solid #2b1730; border-radius: 999px; font-family: "Helvetica Neue", sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+  .pill-gold { background: #e9b143; }
+  .hero { display: grid; grid-template-columns: 640px 1fr; position: relative; overflow: hidden; }
+  .copy { padding: 48px 40px 28px 54px; display: flex; flex-direction: column; justify-content: center; z-index: 2; }
+  .h-top { font-size: 62px; line-height: 0.96; font-weight: 900; letter-spacing: -0.02em; color: #2b1730; text-transform: uppercase; }
+  .h-big { font-size: 94px; line-height: 0.92; font-weight: 900; letter-spacing: -0.025em; color: #dc5f77; text-transform: uppercase; margin-top: 6px; }
+  .sub { margin-top: 18px; font-size: 20px; color: #1f7b76; font-style: italic; }
+  .ctas { display: flex; gap: 16px; margin-top: 24px; }
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 26px; border: 1.5px solid #9674b4; border-radius: 12px; background: #fbf7ed; padding: 12px 16px; font-family: "Helvetica Neue", sans-serif; }
+  .fact strong { display: block; font-size: 22px; color: #2b1730; }
+  .fact span { font-size: 12px; color: #5f4b66; }
+  .art { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: flex-end; }
+  .ribbons { position: absolute; inset: 0; background:
+    radial-gradient(ellipse 680px 180px at 85% 24%, #dc5f77 0 65%, transparent 66%),
+    radial-gradient(ellipse 660px 160px at 88% 46%, #1f8a83 0 62%, transparent 63%),
+    radial-gradient(ellipse 640px 150px at 85% 66%, #9b73bd 0 60%, transparent 61%),
+    radial-gradient(ellipse 560px 130px at 82% 86%, #eca83a 0 62%, transparent 63%);
+  }
+  .sil { position: absolute; left: 10px; bottom: -10px; width: 250px; height: 470px; background: #19131d; border-radius: 140px 110px 40px 0; }
+  .inset { position: relative; z-index: 2; margin-right: 44px; width: 320px; background: #f5efe1; border: 3px solid #2b1730; padding: 20px; box-shadow: 0 0 0 6px #f5efe1, 0 0 0 8px #dc5f77; }
+  .inset-k { font-family: "Helvetica Neue", sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #1f8a83; }
+  .inset-t { font-size: 38px; line-height: 0.98; font-weight: 900; color: #2b1730; margin: 8px 0 12px; }
+  .inset-box { height: 112px; background: #2c2119; color: #f6efe3; padding: 14px; font-family: "Helvetica Neue", sans-serif; font-size: 15px; display: flex; align-items: flex-end; justify-content: space-between; }
+  .bottom { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding: 18px 34px 20px; z-index: 2; }
+  .card { border: 2px solid #1f8a83; border-radius: 14px; background: #faf5e8; padding: 16px 20px; display: flex; flex-direction: column; justify-content: space-between; }
+  .card.c2 { border-color: #9674b4; }
+  .card.c3 { border-color: #dc5f77; }
+  .card-k { font-family: "Helvetica Neue", sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #1f8a83; }
+  .card.c2 .card-k { color: #7e57a0; }
+  .card.c3 .card-k { color: #c74b65; }
+  .card-h { font-size: 28px; font-weight: 900; color: #2b1730; margin-top: 4px; }
+  .card-p { font-family: "Helvetica Neue", sans-serif; font-size: 14px; color: #4f4054; }
+</style>
+</head>
+<body>
+<div class="frame">
+  <header class="top">
+    <div class="brand">MADEFORM</div>
+    <nav class="nav"><span>Work</span><span>Services &amp; pricing</span><span>Studio</span><span>Hyderabad</span></nav>
+    <div class="nav-cta"><span class="pill">WhatsApp</span><span class="pill pill-gold">Let’s talk</span></div>
+  </header>
+  <section class="hero">
+    <div class="copy">
+      <div class="h-top">SMALL BUSINESS.</div>
+      <div class="h-big">BIG PERSONALITY.</div>
+      <p class="sub">Websites and digital menus for cafés, bakeries, and local craft spaces.</p>
+      <div class="ctas"><span class="pill pill-gold">Start a project</span><span class="pill">Explore Aster Coffee</span></div>
+      <div class="facts">
+        <div class="fact"><strong>₹2,999</strong><span>Digital Menu</span></div>
+        <div class="fact"><strong>₹7,999+</strong><span>Business Site</span></div>
+        <div class="fact"><strong>Hyderabad</strong><span>Indie Studio</span></div>
+      </div>
+    </div>
+    <div class="art">
+      <div class="ribbons"></div>
+      <div class="sil"></div>
+      <div class="inset">
+        <div class="inset-k">Studio concept</div>
+        <div class="inset-t">ASTER COFFEE</div>
+        <div class="inset-box"><span>Live website + QR menu</span><span>↗</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="bottom">
+    <div class="card"><div class="card-k">Digital Menus</div><div class="card-h">₹2,999</div><div class="card-p">Up to 30 items, table QR code, WhatsApp link.</div></div>
+    <div class="card c2"><div class="card-k">Business Websites</div><div class="card-h">From ₹7,999</div><div class="card-p">Custom responsive website, gallery, menu &amp; map.</div></div>
+    <div class="card c3"><div class="card-k">Custom Quotes</div><div class="card-h">Tailored scope</div><div class="card-p">Agreed clearly upfront before any work begins.</div></div>
+  </section>
+</div>
+</body>
+</html>

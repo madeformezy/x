@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-19T22:55:00+05:30",
+  "title": "Design System: Madeform",
+  "extensions": {
+    "colorMeta": {
+      "kraft-board": {
+        "role": "primary",
+        "displayName": "Burnt Kraft Board",
+        "canonical": "#d07a3a",
+        "tonalRamp": ["#2d1607", "#4c260c", "#6f3813", "#944d1c", "#b56329", "#d07a3a", "#e49b63", "#f3c7a3"]
+      },
+      "kraft-face": {
+        "role": "primary",
+        "displayName": "Sunlit Kraft Face",
+        "canonical": "#d78243",
+        "tonalRamp": ["#301808", "#52290e", "#763d16", "#9c5220", "#bc6930", "#d78243", "#e8a470", "#f5ceb0"]
+      },
+      "kraft-deep": {
+        "role": "primary",
+        "displayName": "Recessed Kraft Stack",
+        "canonical": "#c67234",
+        "tonalRamp": ["#291406", "#47230b", "#683411", "#8b4719", "#a95a24", "#c67234", "#dc935c", "#f0c19c"]
+      },
+      "kraft-well": {
+        "role": "primary",
+        "displayName": "Cardboard Return Well",
+        "canonical": "#9e521e",
+        "tonalRamp": ["#221004", "#3b1b08", "#58290d", "#783a14", "#9e521e", "#be6b32", "#d88e5a", "#ecc09e"]
+      },
+      "ink-black": {
+        "role": "neutral",
+        "displayName": "Archival Carbon Ink",
+        "canonical": "#0e0d0b",
+        "tonalRamp": ["#0e0d0b", "#1d1a17", "#332e29", "#4d463f", "#6b6259", "#8f857b", "#bab1a7", "#e6e1da"]
+      },
+      "ink-umber": {
+        "role": "neutral",
+        "displayName": "Roasted Umber Ink",
+        "canonical": "#1e1107",
+        "tonalRamp": ["#1e1107", "#331e0e", "#4e2f17", "#6c4222", "#8e5931", "#b17649", "#d19e76", "#ebd0ba"]
+      },
+      "tissue-white": {
+        "role": "neutral",
+        "displayName": "Folded Tissue White",
+        "canonical": "#f6f4ef",
+        "tonalRamp": ["#2b2822", "#48433a", "#696256", "#8d8577", "#b2aa9c", "#d5cfc3", "#eae5da", "#f6f4ef"]
+      },
+      "tissue-fold": {
+        "role": "neutral",
+        "displayName": "Tissue Crease Warmth",
+        "canonical": "#eae5da",
+        "tonalRamp": ["#29251e", "#464035", "#665e4f", "#897f6d", "#aea491", "#cfc7b7", "#eae5da", "#f7f5f0"]
+      },
+      "tissue-umber": {
+        "role": "neutral",
+        "displayName": "Tissue Umber Muted",
+        "canonical": "#433930",
+        "tonalRamp": ["#1a1612", "#2e2720", "#433930", "#5f5246", "#7e6e60", "#a19182", "#c6bab0", "#ebe5df"]
+      },
+      "case-dark": {
+        "role": "neutral",
+        "displayName": "Exhibition Case Charcoal",
+        "canonical": "#141210",
+        "tonalRamp": ["#141210", "#24201c", "#3a342e", "#544c44", "#73685e", "#968b80", "#bfb5ab", "#e8e3dd"]
+      },
+      "case-panel": {
+        "role": "neutral",
+        "displayName": "Exhibition Panel Slate",
+        "canonical": "#1d1a17",
+        "tonalRamp": ["#141210", "#1d1a17", "#322d28", "#4b443d", "#685f56", "#8a7f74", "#b4aa9f", "#e2dcd5"]
+      },
+      "case-muted": {
+        "role": "neutral",
+        "displayName": "Warm Bone Muted",
+        "canonical": "#dec8b4",
+        "tonalRamp": ["#2d2218", "#4b3929", "#6c533d", "#907054", "#b49172", "#cbb096", "#dec8b4", "#f2e7dd"]
+      },
+      "chip-forest": {
+        "role": "secondary",
+        "displayName": "Forest Spec Chip",
+        "canonical": "#4c6c44",
+        "tonalRamp": ["#142012", "#23371f", "#365130", "#4c6c44", "#64895b", "#83a77a", "#abc6a4", "#d8e6d4"]
+      },
+      "chip-steel": {
+        "role": "secondary",
+        "displayName": "Steel Blue Spec Chip",
+        "canonical": "#446685",
+        "tonalRamp": ["#111c26", "#1f3242", "#314b63", "#446685", "#5c82a4", "#7da0bf", "#a7c1d8", "#d6e4f0"]
+      },
+      "chip-violet": {
+        "role": "tertiary",
+        "displayName": "Violet Spec Chip",
+        "canonical": "#684b8c",
+        "tonalRamp": ["#1c1326", "#312244", "#4b3567", "#684b8c", "#8567aa", "#a389c4", "#c4b2dc", "#e5ddf0"]
+      },
+      "chip-brick": {
+        "role": "tertiary",
+        "displayName": "Brick Seal Chip",
+        "canonical": "#b13a2e",
+        "tonalRamp": ["#2c0d0a", "#4e1813", "#74241c", "#983026", "#b13a2e", "#cb5b4f", "#e08a80", "#f2c3be"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display Condensed Poster",
+        "purpose": "Two-line opening hero thesis statement in uppercase Anton."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Primary section headers across work, pricing, studio, and contact."
+      },
+      "title": {
+        "displayName": "Box-End Condensed Title",
+        "purpose": "Archive box headers, principle titles, and process step headings."
+      },
+      "body": {
+        "displayName": "Body Reading Copy",
+        "purpose": "Descriptions, package checklists, form controls, and privacy prose."
+      },
+      "label": {
+        "displayName": "Tabular Spec Monospace",
+        "purpose": "Rupee prices, item-count size runs, button labels, and rail navigation."
+      }
+    },
+    "shadows": [
+      {
+        "name": "cubby-recess",
+        "value": "inset 0 16px 32px rgba(0, 0, 0, 0.62), inset 14px 0 24px rgba(0, 0, 0, 0.42)",
+        "purpose": "Recessed shelf cavity depth inside .archive-cubby behind the pulled drawer."
+      },
+      {
+        "name": "pulled-drawer-3d",
+        "value": "-18px 22px 38px rgba(8, 4, 1, 0.52)",
+        "purpose": "Physical projection shadow cast by the pulled-open 3D cardboard drawer tray."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Exponential ease-out for drawer tray slides, hover lifts, and comparison accordion."
+      }
+    ],
+    "breakpoints": [
+      { "name": "desktop-compact", "value": "1120px" },
+      { "name": "tablet-rail-collapse", "value": "900px" },
+      { "name": "mobile", "value": "720px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid carbon-ink boxboard button with uppercase monospace label and square-stroke arrow.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\"><span>START A PROJECT</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h16M14 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 11px; min-height: 47px; padding: 11px 22px; background: var(--ink, #0e0d0b); color: var(--tissue, #f6f4ef); border: 1.5px solid var(--rule, #141210); border-radius: 2px; font-family: var(--font-mono, monospace); font-size: 13.4px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1), transform 180ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-primary svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.65; } .ds-btn-primary:hover { background: #231e19; transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid #0e0d0b; outline-offset: 2px; box-shadow: 0 0 0 4px #f6f4ef; }"
+    },
+    {
+      "name": "Secondary Kraft Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Bordered burnt-kraft button that inverts to carbon ink on hover.",
+      "html": "<button class=\"ds-btn-secondary\" type=\"button\"><span>SEE PRICING</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4v16M6 14l6 6 6-6\"/></svg></button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 11px; min-height: 47px; padding: 11px 22px; background: var(--kraft, #d07a3a); color: var(--ink, #0e0d0b); border: 1.5px solid var(--rule, #141210); border-radius: 2px; font-family: var(--font-mono, monospace); font-size: 13.4px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1), color 180ms cubic-bezier(0.16, 1, 0.3, 1), transform 180ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-secondary svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.65; } .ds-btn-secondary:hover { background: #0e0d0b; color: #f6f4ef; transform: translateY(-1px); } .ds-btn-secondary:focus-visible { outline: 2px solid #0e0d0b; outline-offset: 2px; box-shadow: 0 0 0 4px #f6f4ef; }"
+    },
+    {
+      "name": "Archive Wall Box End-Label Tab",
+      "kind": "custom",
+      "refersTo": "stack-box",
+      "description": "Interactive box-end cell with top semicircular finger notch, ruled spec row, technical stamp glyph, and four-colorway strip.",
+      "html": "<button class=\"ds-stack-box\" type=\"button\"><span class=\"ds-notch\"></span><span class=\"ds-col\"><span class=\"ds-title\">DIGITAL MENU</span><span class=\"ds-sub\">₹2,999 / UP TO 30 ITEMS</span><span class=\"ds-run\">10 20 30 40 50 +₹50/EA</span></span><svg class=\"ds-mark\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3.5\" y=\"3.5\" width=\"6.5\" height=\"6.5\"/><rect x=\"14\" y=\"3.5\" width=\"6.5\" height=\"6.5\"/><rect x=\"3.5\" y=\"14\" width=\"6.5\" height=\"6.5\"/></svg><span class=\"ds-strip\"><i></i><i></i><i></i><i></i></span></button>",
+      "css": ".ds-stack-box { position: relative; width: 320px; background: var(--kraft, #d07a3a); color: var(--ink, #0e0d0b); border: 1.5px solid var(--rule, #141210); padding: 18px 12px 13px 16px; display: grid; grid-template-columns: minmax(0, 1fr) auto 10px; align-items: end; gap: 10px; text-align: left; cursor: pointer; } .ds-stack-box:hover { background: var(--kraft-face, #d78243); } .ds-stack-box:focus-visible { outline: 2px solid #0e0d0b; outline-offset: 2px; } .ds-notch { position: absolute; top: 0; left: 46%; transform: translateX(-50%); width: 38px; height: 11px; background: #0e0d0b; border-radius: 0 0 19px 19px; } .ds-col { display: flex; flex-direction: column; gap: 3px; } .ds-title { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; line-height: 1; text-transform: uppercase; } .ds-sub { font-family: 'Chivo Mono', monospace; font-size: 11.7px; color: #1e1107; } .ds-run { margin-top: 6px; padding-top: 6px; border-top: 1px solid rgba(20,18,16,0.28); font-family: 'Chivo Mono', monospace; font-size: 11.5px; } .ds-mark { width: 40px; height: 40px; fill: none; stroke: currentColor; stroke-width: 1.35; align-self: center; } .ds-strip { display: grid; grid-template-rows: repeat(4, 1fr); width: 10px; height: 64px; border: 1px solid #141210; } .ds-strip i:nth-child(1) { background: #4c6c44; box-shadow: inset 0 0 0 1.5px #f6f4ef; } .ds-strip i:nth-child(2) { background: #446685; } .ds-strip i:nth-child(3) { background: #684b8c; } .ds-strip i:nth-child(4) { background: #b13a2e; }"
+    },
+    {
+      "name": "Size-Run Estimator Chip",
+      "kind": "chip",
+      "refersTo": "button-primary",
+      "description": "Tabular monospace item-count selector chip used in the Digital Menu rupee estimator.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" type=\"button\">20</button><button class=\"ds-chip is-selected\" type=\"button\" aria-pressed=\"true\">30</button><button class=\"ds-chip\" type=\"button\">45</button></div>",
+      "css": ".ds-chips { display: inline-flex; gap: 6px; } .ds-chip { min-width: 42px; min-height: 35px; padding: 4px 10px; background: #f6f4ef; color: #0e0d0b; border: 1.5px solid #141210; border-radius: 2px; font-family: 'Chivo Mono', monospace; font-size: 12.5px; font-weight: 500; cursor: pointer; } .ds-chip:hover { background: #d78243; } .ds-chip.is-selected { background: #0e0d0b; color: #f6f4ef; } .ds-chip:focus-visible { outline: 2px solid #0e0d0b; outline-offset: 2px; }"
+    },
+    {
+      "name": "Dispatch Form Input Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Tissue-mounted project enquiry input field with monospace label and Steel Blue focus border.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-label\" for=\"ds-biz\">BUSINESS NAME</label><input class=\"ds-input\" id=\"ds-biz\" type=\"text\" placeholder=\"Roast & Crumb Café\"></div>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 6px; max-width: 320px; padding: 14px; background: #f6f4ef; border: 1.5px solid #141210; } .ds-label { font-family: 'Chivo Mono', monospace; font-size: 12.2px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: #0e0d0b; } .ds-input { min-height: 47px; padding: 10px 12px; border: 1.5px solid #141210; border-radius: 2px; background: #ffffff; color: #0e0d0b; font-family: 'Barlow', sans-serif; font-size: 16px; caret-color: #b13a2e; } .ds-input::placeholder { color: #5a4f46; } .ds-input:focus, .ds-input:focus-visible { border-color: #446685; outline: 2px solid #0e0d0b; outline-offset: 2px; }"
+    },
+    {
+      "name": "Left Index Rail Link",
+      "kind": "nav",
+      "refersTo": "stack-box-selected",
+      "description": "Ruled vertical navigation item on the sticky desktop index rail with active carbon-ink inversion.",
+      "html": "<nav class=\"ds-rail\"><a class=\"ds-rail-link is-active\" href=\"#archive\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 7.5 12 3l9 4.5v9L12 21l-9-4.5v-9Z\"/></svg><span>ARCHIVE</span></a><a class=\"ds-rail-link\" href=\"#pricing\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 4h7.5l8.5 8.5-7.5 7.5L4 11.5V4Z\"/></svg><span>PRICING</span></a></nav>",
+      "css": ".ds-rail { width: 118px; background: #d07a3a; border: 1.5px solid #141210; display: flex; flex-direction: column; } .ds-rail-link { display: flex; align-items: center; gap: 8px; padding: 13px 12px; border-bottom: 1px solid rgba(20,18,16,0.28); color: #0e0d0b; text-decoration: none; font-family: 'Chivo Mono', monospace; font-size: 11.5px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; } .ds-rail-link svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.65; } .ds-rail-link:hover { background: rgba(14,13,11,0.1); } .ds-rail-link.is-active { background: #0e0d0b; color: #f6f4ef; } .ds-rail-link:focus-visible { outline: 2px solid #0e0d0b; outline-offset: -2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Hospitality Archive Wall",
+    "overview": "Madeform's visual identity rejects the soft pastel agency template and the cold frosted-glass SaaS shell in favor of tactile hospitality packaging craft. The surface behaves like a floor-to-ceiling wall of burnt-orange archive boxes in a specialty roastery or bakery backroom: every offering, rupee figure, and live concept is indexed on the end of a cardboard box by tall compressed grotesque capitals, a horizontal ruled spec line, a technical stamp glyph, and a four-swatch colorway strip. When a visitor inspects an item, the drawer physically slides out of its recessed dark cubby cavity, exposing a three-dimensional cardboard side wall and multi-faceted folded white tissue paper cradling the real work inside.\n\nDensity is architectural and rule-governed. Rather than floating cards over empty neutral margins, containers share continuous 1.5px ink rules across a committed burnt-orange kraft ground (#d07a3a). Pacing alternates between the dense indexed box wall of the opening viewport, a dark carbon-lined exhibition case (#141210) that gives café photography dramatic contrast, unboxed tissue-lined package slabs (#f6f4ef) with an interactive rupee calculator, a calm unboxed editorial ledger for studio principles, and a tissue-paper project dispatch form.",
+    "keyCharacteristics": [
+      "Committed burnt-orange kraft boxboard ground (#d07a3a) ruled edge-to-edge by 1.5px ink hairlines (#141210).",
+      "Pulled-open 3D cardboard tray inside a recessed dark cubby well with skewed cardboard return walls, top finger-notch cutouts, and multi-fold white tissue paper planes (#f6f4ef).",
+      "Four-swatch vertical colorway strips (Forest #4c6c44, Steel Blue #446685, Violet #684b8c, Brick #b13a2e) indexing every package and concept box.",
+      "Tall compressed uppercase display typography (Anton) paired with condensed box-end headers (Barlow Condensed), tabular monospace pricing specs (Chivo Mono), and clean humanist reading copy (Barlow).",
+      "Persistent left index rail on desktop (7.35rem wide) that collapses cleanly to a ruled sticky top bar on tablet and mobile (<=900px)."
+    ],
+    "rules": [
+      {
+        "name": "The Tinted Umber Rule",
+        "body": "Never place neutral gray text on burnt-orange kraft board; all secondary text on kraft uses deep roasted umber (#1e1107) so shadows and captions belong to the cardboard material and exceed 4.5:1 AA contrast.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tissue Interior Rule",
+        "body": "Pure white and off-white (#f6f4ef) never appear as outer page backgrounds; they are reserved strictly for the interior lining of opened boxes, specimen frames, and dispatch slips resting on the kraft ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The Colorway Strip Rule",
+        "body": "The four accent hues (#4c6c44, #446685, #684b8c, #b13a2e) travel together as a vertical four-part colorway bar on box ends, with a 1.5px white inner inset box-shadow marking which variant owns that box.",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Eyebrow Rule",
+        "body": "Headings never carry a small kicker, badge, or eyebrow label above them; section titles and process headings stand on their own weight, and sequential indices (01–04) occupy a separate structural grid column beside the heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rupee Rule",
+        "body": "Every price (₹2,999, From ₹7,999, +₹50), item count, and phone number (+91 63014 38905) sets font-variant-numeric: tabular-nums so figures align across box ends, calculators, and comparison rows.",
+        "section": "typography"
+      },
+      {
+        "name": "The One-Drawer Depth Rule",
+        "body": "Only the pulled-open archive drawer (.pulled-drawer) projects in 3D space with skewed cardboard side walls and a cast drop shadow; all shelved boxes, package slabs, and form containers sit flat in the ruled 1.5px grid and respond to hover with a crisp -1px to -3px vertical lift.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep #d07a3a burnt-orange kraft as the dominant page ground and use 1.5px solid #141210 rules to divide regions edge-to-edge.",
+      "Do include the semicircular top finger-notch (.box-notch), the horizontal dividing rule above the bottom tabular spec row, and the four-part .colorway-strip on every archive box face.",
+      "Do self-host all four font voices (Anton, Barlow Condensed, Chivo Mono, Barlow) in ./fonts/ to preserve zero third-party font requests and zero tracking cookies.",
+      "Do keep all functional UI text and monospace labels at or above 0.72rem (11.5px)."
+    ],
+    "donts": [
+      "Don't place eyebrow badges, kickers, or STEP 01 pills above headings; integrate sequential numbers into a dedicated structural grid column (.step-index).",
+      "Don't add transition: background-color to button.stack-box tabs adjacent to the 3D drawer, or float .pulled-drawer with position: absolute over static background boxes where icons or notches get partially clipped.",
+      "Don't introduce rounded SaaS pills (999px), frosted-glass blur (backdrop-filter), gradient text, hard brutalist 4px 4px 0 offset shadows, or hand-sketched doodle SVGs."
+    ]
+  }
+}

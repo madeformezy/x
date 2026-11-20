@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Madeform — Archive Box Stack</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1440px; height: 900px; overflow: hidden; background: #cf7938; color: #11100e; font-family: "Arial Narrow", "Helvetica Neue", sans-serif; }
+  .shell { display: grid; grid-template-columns: 124px 1fr; grid-template-rows: 1fr 84px; width: 1440px; height: 900px; }
+  .rail { border-right: 1.5px solid #181410; padding: 24px 16px; display: flex; flex-direction: column; justify-content: space-between; }
+  .rail-brand { font-weight: 900; font-size: 26px; line-height: 0.92; letter-spacing: -0.02em; text-transform: uppercase; }
+  .rail-nav { display: flex; flex-direction: column; gap: 6px; margin-top: 28px; }
+  .rail-item { padding: 11px 10px; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 1px solid #18141033; }
+  .rail-item.active { background: #141210; color: #f5efe6; margin-inline: -16px; padding-inline: 16px; }
+  .stage { display: grid; grid-template-columns: 560px 1fr; overflow: hidden; }
+  .lead { padding: 48px 46px 32px; display: flex; flex-direction: column; justify-content: space-between; }
+  h1 { font-size: 118px; line-height: 0.88; font-weight: 900; letter-spacing: -0.035em; text-transform: uppercase; }
+  .sub { margin-top: 22px; padding-top: 16px; border-top: 1.5px solid #181410; font-family: ui-monospace, monospace; font-size: 16px; line-height: 1.5; max-width: 40ch; }
+  .actions { display: flex; gap: 14px; margin-top: 26px; }
+  .btn { padding: 15px 28px; font-family: ui-monospace, monospace; font-size: 14px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; border: 1.5px solid #141210; }
+  .btn-primary { background: #141210; color: #f5efe6; }
+  .slips { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 28px; }
+  .slip { border: 1.5px solid #141210; padding: 12px; display: flex; flex-direction: column; justify-content: space-between; min-height: 124px; position: relative; }
+  .slip-title { font-weight: 900; font-size: 20px; text-transform: uppercase; line-height: 1; }
+  .slip-price { font-family: ui-monospace, monospace; font-size: 14px; font-weight: 700; margin-top: 6px; }
+  .slip-chip { position: absolute; top: 0; right: 0; bottom: 0; width: 10px; background: linear-gradient(#4c6848 25%, #3d6386 25% 50%, #684b8c 50% 75%, #b1382a 75%); border-left: 1px solid #141210; }
+  .wall { border-left: 1.5px solid #181410; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(5, 1fr); background: #ba692d; position: relative; }
+  .box { border: 1.5px solid #141210; background: #cf7938; padding: 16px 22px 14px 18px; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
+  .box::before { content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 42px; height: 14px; background: #141210; border-radius: 0 0 22px 22px; }
+  .box-name { font-size: 28px; font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; }
+  .box-meta { font-family: ui-monospace, monospace; font-size: 13px; letter-spacing: 0.04em; }
+  .box-strip { position: absolute; right: 12px; top: 18px; bottom: 14px; width: 12px; border: 1px solid #141210; background: linear-gradient(#4f6d4c 33%, #47688a 33% 66%, #b13a2e 66%); }
+  .drawer { position: absolute; left: -36px; top: 390px; width: 540px; height: 228px; background: #c56f31; border: 2px solid #141210; box-shadow: -18px 24px 40px rgba(20,14,8,.42); z-index: 4; display: grid; grid-template-rows: 96px 1fr; }
+  .tissue { background: #f6f4ef; border-bottom: 2px solid #141210; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; }
+  .tissue-card { background: #2d241c; color: #f7f3ea; padding: 12px 18px; font-size: 20px; font-weight: 700; letter-spacing: 0.02em; }
+  .tissue-qr { width: 58px; height: 58px; border: 2px solid #141210; background: repeating-linear-gradient(45deg, #141210 0 4px, transparent 4px 8px); }
+  .drawer-face { padding: 18px 22px; display: flex; justify-content: space-between; align-items: flex-end; }
+  .drawer-title { font-size: 40px; font-weight: 900; text-transform: uppercase; line-height: 0.95; }
+  .ledger { grid-column: 1 / -1; border-top: 1.5px solid #181410; display: grid; grid-template-columns: 1.1fr 1fr 1.2fr 1.5fr; align-items: center; }
+  .ledger-cell { padding: 0 24px; border-right: 1px solid #181410; height: 100%; display: flex; flex-direction: column; justify-content: center; }
+  .ledger-k { font-family: ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .ledger-v { font-size: 26px; font-weight: 900; text-transform: uppercase; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <div>
+      <div class="rail-brand">MADE<br>FORM</div>
+      <div class="rail-nav">
+        <div class="rail-item active">Work</div>
+        <div class="rail-item">Services</div>
+        <div class="rail-item">Pricing</div>
+        <div class="rail-item">Studio</div>
+        <div class="rail-item">WhatsApp</div>
+      </div>
+    </div>
+    <div class="rail-item">Let’s talk</div>
+  </aside>
+  <main class="stage">
+    <section class="lead">
+      <div>
+        <h1>SMALL<br>BUSINESS.<br>BIG<br>CRAFT.</h1>
+        <p class="sub">Websites from ₹7,999 and mobile QR digital menus at ₹2,999 for cafés, bakeries, and local places in Hyderabad.</p>
+        <div class="actions">
+          <div class="btn btn-primary">Start a project →</div>
+          <div class="btn">See pricing</div>
+        </div>
+      </div>
+      <div class="slips">
+        <div class="slip"><div class="slip-title">Digital Menu</div><div class="slip-price">₹2,999 · 30 items</div><div class="slip-chip"></div></div>
+        <div class="slip"><div class="slip-title">Business Site</div><div class="slip-price">From ₹7,999</div><div class="slip-chip"></div></div>
+        <div class="slip"><div class="slip-title">Custom Brief</div><div class="slip-price">Tailored quote</div><div class="slip-chip"></div></div>
+      </div>
+    </section>
+    <section class="wall">
+      <div class="box"><div class="box-name">Digital Menu</div><div class="box-meta">₹2,999 · 30 ITEMS · QR</div><div class="box-strip"></div></div>
+      <div class="box"><div class="box-name">Bakery Site</div><div class="box-meta">FROM ₹7,999 · CUSTOM</div><div class="box-strip"></div></div>
+      <div class="box"><div class="box-name">Table QR</div><div class="box-meta">MOBILE FIRST · FAST</div><div class="box-strip"></div></div>
+      <div class="box"><div class="box-name">Café Store</div><div class="box-meta">GALLERY · MAP · WA</div><div class="box-strip"></div></div>
+      <div class="box"><div class="box-name">Aster Menu</div><div class="box-meta">LIVE DEMO · CONCEPT</div><div class="box-strip"></div></div>
+      <div class="box"><div class="box-name">Roast Guide</div><div class="box-meta">HYDERABAD STUDIO</div><div class="box-strip"></div></div>
+      <div class="box"><div class="box-name">Full Scope</div><div class="box-meta">NO HIDDEN FEES</div><div class="box-strip"></div></div>
+      <div class="box"><div class="box-name">Direct Dev</div><div class="box-meta">DESIGNER = BUILDER</div><div class="box-strip"></div></div>
+      <div class="box"><div class="box-name">WhatsApp</div><div class="box-meta">+91 63014 38905</div><div class="box-strip"></div></div>
+      <div class="box"><div class="box-name">Custom Spec</div><div class="box-meta">AGREED UPFRONT</div><div class="box-strip"></div></div>
+      <div class="drawer">
+        <div class="tissue">
+          <div class="tissue-card">ASTER COFFEE · LIVE STUDIO CONCEPT</div>
+          <div class="tissue-qr"></div>
+        </div>
+        <div class="drawer-face">
+          <div>
+            <div class="drawer-title">ASTER COFFEE</div>
+            <div class="box-meta">STUDIO CONCEPT · WEBSITE + QR MENU</div>
+          </div>
+          <div class="box-meta">OPEN LIVE ↗</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="ledger">
+    <div class="ledger-cell"><div class="ledger-k">Digital Menu</div><div class="ledger-v">₹2,999</div></div>
+    <div class="ledger-cell"><div class="ledger-k">Business Website</div><div class="ledger-v">FROM ₹7,999</div></div>
+    <div class="ledger-cell"><div class="ledger-k">Live Proof</div><div class="ledger-v">ASTER COFFEE</div></div>
+    <div class="ledger-cell"><div class="ledger-k">Studio</div><div class="ledger-v">HYDERABAD, INDIA</div></div>
+  </footer>
+</div>
+</body>
+</html>

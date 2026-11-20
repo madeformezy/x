@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Madeform — Modern Studio Grid</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1440px; height: 900px; overflow: hidden; background: #ffffff; color: #15161a; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .page { width: 1440px; height: 900px; display: grid; grid-template-rows: 84px 1fr 224px; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 0 72px; border-bottom: 1px solid #e6e7ec; }
+  .brand { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 700; letter-spacing: -0.03em; }
+  .mark { width: 30px; height: 30px; background: #e84b25; color: #fff; border-radius: 7px; display: grid; place-items: center; font-weight: 800; font-size: 16px; }
+  nav { display: flex; align-items: center; gap: 36px; font-size: 15px; font-weight: 500; }
+  .btn-pill { background: #15161a; color: #fff; padding: 12px 24px; border-radius: 999px; font-size: 14px; font-weight: 600; }
+  .hero { display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 64px; padding: 48px 72px; }
+  h1 { font-size: 86px; line-height: 0.98; letter-spacing: -0.045em; font-weight: 700; }
+  h1 span { color: #e84b25; }
+  .sub { margin-top: 24px; font-size: 20px; line-height: 1.5; color: #545661; max-width: 38ch; }
+  .actions { display: flex; align-items: center; gap: 24px; margin-top: 32px; }
+  .link { font-size: 15px; font-weight: 600; text-decoration: underline; text-underline-offset: 6px; }
+  .spec { margin-top: 28px; padding-top: 18px; border-top: 1px solid #e6e7ec; font-size: 14px; color: #545661; }
+  .stage { background: #f2f3f6; border: 1px solid #e2e4ea; border-radius: 24px; padding: 26px; height: 460px; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
+  .browser { background: #261f18; border-radius: 14px; flex: 1; padding: 28px; color: #f8f5ef; display: flex; flex-direction: column; justify-content: flex-end; }
+  .browser h2 { font-size: 46px; font-weight: 600; letter-spacing: -0.03em; }
+  .qr { position: absolute; right: 40px; bottom: 40px; width: 150px; background: #fff; border: 1px solid #d9dce3; border-radius: 14px; padding: 14px; box-shadow: 0 18px 36px rgba(21,22,26,.14); }
+  .qr-code { width: 100%; aspect-ratio: 1; background: repeating-linear-gradient(90deg, #15161a 0 6px, #fff 6px 12px); margin-bottom: 8px; }
+  .pricing { background: #f2f3f6; border-top: 1px solid #e2e4ea; padding: 34px 72px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .pkg { background: #fff; border: 1px solid #e2e4ea; border-radius: 16px; padding: 24px 28px; display: flex; justify-content: space-between; align-items: center; }
+  .pkg h3 { font-size: 26px; letter-spacing: -0.03em; }
+  .pkg p { font-size: 14px; color: #545661; margin-top: 6px; }
+  .price { font-size: 38px; font-weight: 700; letter-spacing: -0.04em; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="brand"><span class="mark">m</span> madeform</div>
+    <nav><span>Work</span><span>Services &amp; pricing</span><span>Studio</span><span class="btn-pill">Let’s talk ↗</span></nav>
+  </header>
+  <section class="hero">
+    <div>
+      <h1>Small business.<br><span>Big personality.</span></h1>
+      <p class="sub">Websites and digital menus for cafés, bakeries, and independent businesses in Hyderabad.</p>
+      <div class="actions"><span class="btn-pill">Start a project ↗</span><span class="link">See pricing ↓</span></div>
+      <div class="spec">Digital menus ₹2,999 · Business websites from ₹7,999 · Domains excluded</div>
+    </div>
+    <div class="stage">
+      <div class="browser"><div>ASTER COFFEE · STUDIO CONCEPT</div><h2>Good coffee.<br>Slow moments.</h2></div>
+      <div class="qr"><div class="qr-code"></div><strong>Scan menu</strong></div>
+    </div>
+  </section>
+  <section class="pricing">
+    <div class="pkg"><div><h3>Digital menus</h3><p>Up to 30 items · ₹50/extra · Table QR</p></div><div class="price">₹2,999</div></div>
+    <div class="pkg"><div><h3>Business websites</h3><p>Responsive site, gallery, menu &amp; map</p></div><div class="price">₹7,999+</div></div>
+  </section>
+</div>
+</body>
+</html>
